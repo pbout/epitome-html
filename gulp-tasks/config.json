@@ -1,0 +1,10 @@
+{
+    "dictionary" : {
+        "static" : [
+            ["[?-test-?]","static"]
+        ],
+        "django" : [
+            ["[?-test-?]","django"]
+        ]
+    }
+}

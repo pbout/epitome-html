@@ -1,0 +1,23 @@
+{{!--
+    Jumbotron Containing a title and a desctiption as well as a button and a note 
+    seperated by a horizontal line.
+
+    Usage:
+    {{> _container-jumbotron 
+        title = "Just a title"
+        description = "Some description"
+        note = "Just a note"
+        btn-link = "http://link.com"
+        btn-name = "Go to link.com"
+    }}
+--}}
+
+<div class="jumbotron">
+    <h1 class="display-3">{{ title }}</h1>
+    <p class="lead">{{ description }}</p>
+    <hr class="my-4">
+    <p>{{ note }}</p>
+    <p class="lead">
+        <a class="btn btn-primary btn-lg" href={{ btn-link }} role="button">{{ btn-name }}</a>
+    </p>
+</div>

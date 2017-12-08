@@ -1,0 +1,100 @@
+<div class="container mt-5">
+    <h1>1.Buttons</h1>
+    <h4>Bootstrap includes several button styles for different purposes</h4>
+</div>
+
+<div class="container mt-5">
+    <h4>1.1. Basic buttons</h4>
+    <p>This code produces the following result:</p>
+    <pre>
+<code class="language-markup">&lt;button type="button" class="btn btn-primary"&gt;Primary&lt;/button&gt;
+&lt;button type="button" class="btn btn-secondary"&gt;Secondary&lt;/button&gt;
+&lt;!-- . . . --&gt;
+&lt;button type="button" class="btn btn-link">Link</button></code></pre>
+    {{> _buttons }}
+</div>
+
+<div class="container mt-5">
+    <h4>1.2. Buttons disabled</h4>
+    <p>Similarly, adding "disabled" to the class yields the following result:</p>
+    <pre>
+<code class="language-html">&lt;button type="button" class="btn btn-primary disabled"&gt;Primary&lt;/button&gt;
+&lt;button type="button" class="btn btn-secondary disabled"&gt;Secondary&lt;/button&gt;
+&lt;!-- . . . --&gt;
+&lt;button type="button" class="btn btn-link disabled">Link</button></code></pre>
+    {{> _buttons-disabled }}
+</div>
+
+<div class="container mt-5">
+    <h4>1.3. Buttons outlined</h4>
+    <p>To outline the primary button add "outline" to the btn-primary class ("btn-outline-primary"). Use "disabled" to disable the button like in the previous example.</p>
+    <pre>
+<code class="language-html">&lt;button type="button" class="btn btn-outline-primary"&gt;Primary&lt;/button&gt;
+&lt;button type="button" class="btn btn-outline-secondary disabled"&gt;Secondary&lt;/button&gt;
+&lt;!-- . . . --&gt;
+&lt;button type="button" class="btn btn-outline-danger">Danger</button></code></pre>
+    {{> _buttons-outline }}
+</div>
+
+<div class="container mt-5">
+    <h4>1.4. Buttons with dropdown</h4>
+        <p>The snippet below creates a button dropdown effect. It consists of a group with a parent button typed button and link type buttons as children.</p>
+    <pre>
+<code class="language-html">&lt;div class="btn-group" role="group" aria-label="Button group with nested dropdown"&gt;
+&lt;button type="button" class="btn btn-primary"&gt;Primary&lt;/button&gt;
+    &lt;div class="btn-group" role="group"&gt;
+        &lt;button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"&gt;&lt;/button&gt;
+        &lt;div class="dropdown-menu" aria-labelledby="btnGroupDrop1"&gt;
+            &lt;a class="dropdown-item" href="#"&gt;Dropdown link&lt;/a&gt;
+            &lt;a class="dropdown-item" href="#"&gt;Dropdown link&lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    {{> _buttons-dropdown }}
+</div>
+
+<div class="container mt-5">
+    <h4>1.5. Large buttons</h4>
+    <p>Using "btn-lg" produces a large button and "btn-sm" a small one. The size difference is demonstrated below.</p>
+<pre>
+<code class="language-html">&lt;button type="button" class="btn btn-primary btn-lg"&gt;Large button&lt;/button&gt;
+&lt;button type="button" class="btn btn-primary"&gt;Default button&lt;/button&gt;
+&lt;button type="button" class="btn btn-primary btn-sm"&gt;Small button&lt;/button&gt;</code></pre>
+    {{> _buttons-large }}
+</div>
+
+<div class="container mt-5">
+    <h4>1.6. Block level buttons</h4>
+    <p>Any button containing the "btn-block" class will fill its parent.</p>
+    <pre>
+<code class="language-html">&lt;button type="button" class="btn btn-primary btn-lg btn-block"&gt;Block level button&lt;/button&gt;
+&lt;button type="button" class="btn btn-secondary btn-lg btn-block"&gt;Block level button&lt;/button&gt;
+&lt;!-- . . . --&gt;
+&lt;button type="button" class="btn btn-link btn-lg btn-block"&gt;Block level button&lt;/button&gt;</code></pre>
+    {{> _buttons-block-level }}
+</div>
+
+<div class="container mt-5">
+    <h4>1.7. Checkbox buttons</h4>
+    {{> _buttons-checkbox }}
+</div>
+
+<div class="container mt-5">
+    <h4>1.8. Radio buttons</h4>
+    {{> _buttons-radio }}
+</div>
+
+<div class="container mt-5">
+    <h4>1.9. Vertical buttons group</h4>
+    {{> _buttons-vertical }}
+</div>
+
+<div class="container mt-5">
+    <h4>1.10. Buttons group</h4>
+    {{> _buttons-group }}
+</div>
+
+<div class="container mt-5">
+    <h4>1.11. Buttons toolbar</h4>
+    {{> _buttons-toolbar }}
+</div>

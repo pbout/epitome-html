@@ -1,0 +1,19 @@
+{{!
+    Light Navbar with logo on the left and links on the right.
+    Is non-collapsible.
+
+    Variables:
+    - src: source for logo file
+    - login: url for login
+    - register: url to register
+    
+}}
+<nav class="navbar navbar-light bg-light justify-content-between flex-nowrap flex-row">
+    <a class="navbar-brand  float-left" href="#">
+        <img src={{ src }} width="30" height="30" alt="">
+    </a>
+    <ul class="nav navbar-nav flex-row float-right">
+        <li class="nav-item"><a class="nav-link pr-3" href={{ login }}>Login</a></li>
+        <li class="nav-item"><a class="nav-link" href={{ register }}>Sign up</a></li>
+    </ul>
+</nav>

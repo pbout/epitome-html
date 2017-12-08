@@ -1,0 +1,16 @@
+@mixin icon ($name, $code) {
+    $withslash: "\"\\#{$code}\"";
+    .#{$mdi-css-prefix}-#{$name}:before {
+      content: unquote($withslash);
+    }
+  }
+
+@each $key, $value in $mdi-icons {
+        @include icon($key, $value);
+}
+
+.#{$mdi-css-prefix}-blank:before {
+    content: "\F68C";
+    visibility: hidden;
+}
+
