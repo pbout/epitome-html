@@ -8,3 +8,7 @@ var runSequence = require('run-sequence');
 gulp.task('build', function(){
     runSequence('clean','build:html', 'build:css', 'minifycss', 'build:js', 'copy:img');
 });
+
+gulp.task('build:nojs', function(){
+  runSequence('clean','build:html', 'build:css', 'minifycss', 'copy:img');
+});

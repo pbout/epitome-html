@@ -1,13 +1,28 @@
-{{!
+{{!--
     A set of large buttons which fill the full width of their parent.
     This block is for demonstration purposes. Use the elements below in other partials 
     but avoid using as is. 
-}}
 
-<button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
-<button type="button" class="btn btn-secondary btn-lg btn-block">Block level button</button>
-<button type="button" class="btn btn-success btn-lg btn-block">Block level button</button>
-<button type="button" class="btn btn-info btn-lg btn-block">Block level button</button>
-<button type="button" class="btn btn-warning btn-lg btn-block">Block level button</button>
-<button type="button" class="btn btn-danger btn-lg btn-block">Block level button</button>
-<button type="button" class="btn btn-link btn-lg btn-block">Block level button</button>
+    Usage: Call each button individualy using 
+      {{> _buttons btn-block-primary-text="Button text" }}
+    To get a button with a secondary color change btn-primary-text to 
+    btn-secondary-text.
+--}}
+
+  {{#if btn-block-primary-text }}
+    <button type="button" class="btn btn-primary btn-lg btn-block">{{ btn-block-primary-text }}</button>
+  {{else if btn-block-secondary-text }}
+    <button type="button" class="btn btn-secondary btn-lg btn-block">{{ btn-block-secondary-text }}</button>
+  {{else if btn-block-success-text }}
+    <button type="button" class="btn btn-success btn-lg btn-block">{{ btn-block-success-text }}</button>
+  {{else if btn-block-info-text }}
+    <button type="button" class="btn btn-info btn-lg btn-block">{{ btn-block-info-text }}</button>
+  {{else if btn-block-warning-text }}
+    <button type="button" class="btn btn-warning btn-lg btn-block">{{ btn-block-warning-text }}</button>
+  {{else if btn-block-danger-text }}
+    <button type="button" class="btn btn-danger btn-lg btn-block">{{ btn-block-danger-text }}</button>
+  {{else if btn-block-link-text }}
+    <button type="button" class="btn btn-link btn-lg btn-block">{{ btn-block-link-text }}</button>
+  {{else}}
+    <p>invalid selector</p>
+  {{/if}}

@@ -1,11 +1,6 @@
 /* ---------------------------------------------------
     SIDEBAR STYLE
 ----------------------------------------------------- */
-$background:  $outerspace;
-$link-inactive: $shuttlegray;
-$link-hover: $success;
-$link-active: $white;
-
 .wrapper {
   display: flex;
   align-items: stretch;
@@ -14,8 +9,8 @@ $link-active: $white;
 #sidebar {
   min-width: 250px;
   max-width: 250px;
-  background: $background;
-  color: $gray-500;
+  background: #7386D5;
+  color: #fff;
   transition: all 0.3s;
   
   &.active {
@@ -56,27 +51,24 @@ $link-active: $white;
   }
   
   ul li {
-      a {
-        color: $link-inactive;
-        text-decoration: none;
-        text-align: left;
-        padding: 20px 60px;
-        font-size: 1.2em;
-        font-weight: bold;
-        display: block;
-        i {
-            margin-right: 10px;
-        }
-      }
-      a:hover {
-          color: $link-hover;
-          text-decoration: none;
+    a {
+      text-align: left;
+      padding: 10px;
+      font-size: 1.1em;
+      display: block;
+      i {
+          margin-right: 10px;
       }
     }
+    a:hover {
+        color: #7386D5;
+        background: #fff;
+    }
+  }
   
   .sidebar-header {
       padding: 20px;
-      background: $primary;
+      background: #6d7fcc;
       strong {
         display: none;
         font-size: 1.8em;
@@ -84,39 +76,50 @@ $link-active: $white;
   }
   
   ul.components {
-      padding: 15px 0;
-  }
-  ul li.active > a, a[aria-expanded="true"] {
-    color: $link-active;
+      padding: 20px 0;
+      border-bottom: 1px solid #47748b;
   }
   
-  ul ul a {
-    font-size: 0.9em !important;
-    padding-left: 30px !important;
-    background: $gray-800;
-  }
-
-
-
-  ul.CTAs a {
-    text-align: center;
-    font-size: 0.9em !important;
-    display: block;
-    border-radius: 5px;
-    margin-bottom: 5px;
-  }
-
-  a.download {
-    background: $primary;
+  ul li.active > a, a[aria-expanded="true"] {
     color: #fff;
-  }
-
-  a.article, a.article:hover {
-    background: $gray-800 !important;
-    color: #fff !important;
+    background: #6d7fcc;
   }
 }
 
+a[data-toggle="collapse"] {
+  position: relative;
+}
+
+a[aria-expanded="false"]::before, a[aria-expanded="true"]::before {
+  content: '\e259';
+  display: block;
+  position: absolute;
+  right: 20px;
+  font-family: 'Glyphicons Halflings';
+  font-size: 0.6em;
+}
+a[aria-expanded="true"]::before {
+  content: '\e260';
+}
+
+
+ul ul a {
+  font-size: 0.9em !important;
+  padding-left: 30px !important;
+  background: #6d7fcc;
+}
+
+
+
+a.download {
+  background: #fff;
+  color: #7386D5;
+}
+
+a.article, a.article:hover {
+  background: #6d7fcc !important;
+  color: #fff !important;
+}
 
 
 

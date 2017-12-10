@@ -1,30 +1,76 @@
-<!-- Sidebar -->
+{{!-- 
+    This partial contains a sidebar which can shrint to an iconbar. On medium and large screens
+    it is possible to toggle between a sidebar and iconbar. On small screens the toggling reveals or hides 
+    the iconbar only. The functionality remains the same.
 
-<ul class="sidebar-nav">
-    <li class="sidebar-brand">
-        <a href="#">
-            Start Bootstrap
-        </a>
-    </li>
-    <li class="mt-3">
-        <a class="mdi mdi-account-box mdi-24px"href="#">Dashboard</a>
-    </li>
-    <li>
-        <a class="mdi mdi-account-location mdi-24px" href="#">Shortcuts</a>
-    </li>
-    <li>
-        <a class="mdi mdi-account-multiple-plus mdi-24px" href="#">Overview</a>
-    </li>
-    <li>
-        <a class="mdi mdi-account-search mdi-24px" href="#">Events</a>
-    </li>
-    <li>
-        <a class="mdi mdi-clippy mdi-24px" href="#">About</a>
-    </li>
-    <li>
-        <a class="mdi mdi-close-box mdi-24px" href="#">Services</a>
-    </li>
-    <li>
-        <a class="mdi mdi-firefox mdi-24px" href="#">   Contact</a>
-    </li>
-</ul>
+    Useage: The partial must be positioned inside a <div class="wrapper"> and the content must be 
+    positioned inside a <div class="content"> as such:
+        
+    <div class=wrapper>
+        {{> _sidebar }}
+        <div class="content">
+            <p>here goes all content</p>
+        </div>
+    </div>
+
+    The sidebar is activated by any button containing the id="sidebarCollapse"
+
+    Source: https://bootstrapious.com/p/bootstrap-sidebar 
+--}}
+
+<nav id="sidebar">
+    <div class="sidebar-header">
+        <h3>Epitome</h3>
+        <strong>EPT</strong>
+    </div>
+
+    <ul class="list-unstyled components">
+        <li class="active">
+            <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">
+                <i class="mdi mdi-home"></i>
+                Home
+            </a>
+            <ul class="collapse list-unstyled" id="homeSubmenu">
+                <li><a href="#">Home 1</a></li>
+                <li><a href="#">Home 2</a></li>
+                <li><a href="#">Home 3</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">
+                <i class="mdi mdi-movie"></i>
+                About
+            </a>
+            <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">
+                <i class="mdi mdi-heart-box"></i>
+                Pages
+            </a>
+            <ul class="collapse list-unstyled" id="pageSubmenu">
+                <li><a href="#">Page 1</a></li>
+                <li><a href="#">Page 2</a></li>
+                <li><a href="#">Page 3</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">
+                <i class="mdi mdi-lock"></i>
+                Portfolio
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <i class="mdi mdi-account"></i>
+                FAQ
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <i class="mdi mdi-account-switch"></i>
+                Contact
+            </a>
+        </li>
+    </ul>
+
+
+
+</nav>

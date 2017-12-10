@@ -1,13 +1,28 @@
-{{!
-    A set of buttons.
+{{!--
+    A set of buttons for demonstration purposes. 
     This block is for demonstration purposes. Use the elements below in other partials 
-    but avoid using as is. 
-}}
+    but avoid using as is.
 
-<button type="button" class="btn btn-primary">Primary</button>
-<button type="button" class="btn btn-secondary">Secondary</button>
-<button type="button" class="btn btn-success">Success</button>
-<button type="button" class="btn btn-info">Info</button>
-<button type="button" class="btn btn-warning">Warning</button>
-<button type="button" class="btn btn-danger">Danger</button>
-<button type="button" class="btn btn-link">Link</button>
+    Usage: Call each button individualy using 
+      {{> _buttons btn-primary-text="Button text" }}
+    To get a button with a secondary color change btn-primary-text to 
+    btn-secondary-text.
+--}}
+
+  {{#if btn-primary-text }}
+    <button type="button" class="btn btn-primary">{{ btn-primary-text }}</button>
+  {{else if btn-secondary-text }}
+    <button type="button" class="btn btn-secondary">{{ btn-secondary-text }}</button>
+  {{else if btn-success-text }}
+    <button type="button" class="btn btn-success">{{ btn-success-text }}</button>
+  {{else if btn-info-text }}
+    <button type="button" class="btn btn-info">{{ btn-info-text }}</button>
+  {{else if btn-warning-text }}
+    <button type="button" class="btn btn-warning">{{ btn-warning-text }}</button>
+  {{else if btn-danger-text }}
+    <button type="button" class="btn btn-danger">{{ btn-danger-text }}</button>
+  {{else if btn-link-text }}
+    <button type="button" class="btn btn-link">{{ btn-link-text }}</button>
+  {{else}}
+    <p>invalid selector</p>
+  {{/if}}
