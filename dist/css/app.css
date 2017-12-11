@@ -12324,7 +12324,7 @@ a.text-dark:focus, a.text-dark:hover {
     min-width: 90px;
     max-width: 90px;
     text-align: center; }
-    #sidebar.active .sidebar-header h3, #sidebar.active #sidebar.active .CTAs {
+    #sidebar.active .sidebar-header h3, #sidebar.active .sidebar-header #sidebar.active .CTAs {
       display: none; }
     #sidebar.active .sidebar-header strong {
       display: block; }
@@ -12362,9 +12362,6 @@ a.text-dark:focus, a.text-dark:hover {
   #sidebar .sidebar-header {
     padding: 20px;
     background: #2C3E50; }
-    #sidebar .sidebar-header strong {
-      display: none;
-      font-size: 1.8em; }
   #sidebar ul.components {
     padding: 15px 0; }
   #sidebar ul li.active > a, #sidebar a[aria-expanded="true"] {
@@ -12398,8 +12395,6 @@ a.text-dark:focus, a.text-dark:hover {
       margin-left: 0 !important; }
     #sidebar .sidebar-header h3, #sidebar .sidebar-header #sidebar .CTAs {
       display: none; }
-    #sidebar .sidebar-header strong {
-      display: block; }
     #sidebar ul li a {
       padding: 20px 10px; }
       #sidebar ul li a span {

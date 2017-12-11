@@ -31,13 +31,15 @@ $link-inbetween-padding: 20px;
     min-width: $contracted-size;
     max-width: $contracted-size;
     text-align: center;
-    
-    .sidebar-header h3, #sidebar.active .CTAs {
-      display: none;
-    }
-    
-    .sidebar-header strong {
-      display: block;
+
+    .sidebar-header {
+      h3, #sidebar.active .CTAs {
+        display: none;
+      }
+
+      strong {
+        display: block;
+      }
     }
     
     ul li a {
@@ -86,18 +88,18 @@ $link-inbetween-padding: 20px;
   .sidebar-header {
       padding: 20px;
       background: $primary;
-      strong {
-        display: none;
-        font-size: 1.8em;
+      //strong {
+      //  display: none;
+      //  font-size: 1.8em;
+      //}
     }
-  }
-  
-  ul.components {
-      padding: 15px 0;
-  }
-  ul li.active > a, a[aria-expanded="true"] {
-    color: $link-active;
-  }
+    
+    ul.components {
+        padding: 15px 0;
+    }
+    ul li.active > a, a[aria-expanded="true"] {
+      color: $link-active;
+    }
   
   ul ul a {
     font-size: 0.9em !important;
@@ -142,9 +144,9 @@ $link-inbetween-padding: 20px;
           display: none;
         }
         
-        strong {
-          display: block;
-        }
+        //strong {
+        //  display: block;
+        //}
       }
       
       ul li{

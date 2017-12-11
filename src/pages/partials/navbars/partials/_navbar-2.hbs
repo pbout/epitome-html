@@ -1,0 +1,22 @@
+{{!
+    Dark Navbar with logo on the left and dropdown on the right.
+    Is non-collapsible.
+    Variables:
+    - src: source for logo file
+    - login: url for login
+    - register: url to register
+    
+}}
+
+<nav class="navbar navbar-expand navbar-dark bg-primary">
+    <a class="mdi mdi-chevron-right float-left" id="sidebarCollapse" href="#" role="button"></a>
+    <ul class="navbar-nav w-100">
+      <li class="nav-item dropdown ml-auto">
+        <a class="nav-link dropdown-toggle mdi mdi-account-box" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href={{ login }}>Login </a>
+            <a class="dropdown-item" href={{ register }}>Register</a>
+        </div>
+      </li>
+    </ul>  
+</nav>

@@ -5,14 +5,13 @@
     </head>
     <body>
         <div class="wrapper">
-            {{> _sidebar }}
+            {{> _sidebar src="img/logo.svg" }}
             <div id="content">
                 <div class="navbar-header">
-                    {{> _navbar-logo-dark src="img/logo.svg" }}
-                    <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
-                        <i class="glyphicon glyphicon-align-left"></i>
-                        <span>Toggle Sidebar</span>
-                    </button>
+                    {{> _navbar-2 src="img/logo.svg" }}
+                </div>
+                <div class="container-fluid p-4">
+                    {{> _people-content }}
                 </div>
             </div>
         </div>
