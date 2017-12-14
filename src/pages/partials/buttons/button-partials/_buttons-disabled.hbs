@@ -1,13 +1,28 @@
-{{!
-    Basic disabled buttons.
+{{!--
+    A set of disabled buttons for demonstration purposes. 
     This block is for demonstration purposes. Use the elements below in other partials 
-    but avoid using as is. 
-}}
+    but avoid using as is.
 
-<button type="button" class="btn btn-primary disabled">Primary</button>
-<button type="button" class="btn btn-secondary disabled">Secondary</button>
-<button type="button" class="btn btn-success disabled">Success</button>
-<button type="button" class="btn btn-info disabled">Info</button>
-<button type="button" class="btn btn-warning disabled">Warning</button>
-<button type="button" class="btn btn-danger disabled">Danger</button>
-<button type="button" class="btn btn-link disabled">Link</button>
+    Usage: Call each button individualy using 
+      {{> _buttons-disabled btn-primary-text="Button text" }}
+    To get a button with a secondary color change btn-primary-text to 
+    btn-secondary-text.
+--}}
+
+  {{#if btn-primary-text }}
+    <button type="button" class="btn btn-primary disabled">{{ btn-primary-text }}</button>
+  {{else if btn-secondary-text }}
+    <button type="button" class="btn btn-secondary disabled">{{ btn-secondary-text }}</button>
+  {{else if btn-success-text }}
+    <button type="button" class="btn btn-success disabled">{{ btn-success-text }}</button>
+  {{else if btn-info-text }}
+    <button type="button" class="btn btn-info disabled">{{ btn-info-text }}</button>
+  {{else if btn-warning-text }}
+    <button type="button" class="btn btn-warning disabled">{{ btn-warning-text }}</button>
+  {{else if btn-danger-text }}
+    <button type="button" class="btn btn-danger disabled">{{ btn-danger-text }}</button>
+  {{else if btn-link-text }}
+    <button type="button" class="btn btn-link disabled">{{ btn-link-text }}</button>
+  {{else}}
+    <p>invalid selector</p>
+  {{/if}}

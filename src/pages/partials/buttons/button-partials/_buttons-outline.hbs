@@ -1,12 +1,26 @@
-{{!
-    Demonstration of outlined buttons with color variations.
+{{!--
+    A set of buttons with outline for demonstration purposes. 
     This block is for demonstration purposes. Use the elements below in other partials 
-    but avoid using as is. 
-}}
+    but avoid using as is.
 
-<button type="button" class="btn btn-outline-primary">Primary</button>
-<button type="button" class="btn btn-outline-secondary" disabled>Secondary</button>
-<button type="button" class="btn btn-outline-success">Success</button>
-<button type="button" class="btn btn-outline-info">Info</button>
-<button type="button" class="btn btn-outline-warning">Warning</button>
-<button type="button" class="btn btn-outline-danger">Danger</button>
+    Usage: Call each button individualy using 
+      {{> _buttons-outline btn-primary-text="Button text" }}
+    To get a button with a secondary color change btn-primary-text to 
+    btn-secondary-text.
+--}}
+
+  {{#if btn-primary-text }}
+    <button type="button" class="btn btn-outline-primary">{{ btn-primary-text }}</button>
+  {{else if btn-secondary-text }}
+    <button type="button" class="btn btn-outline-secondary">{{ btn-secondary-text }}</button>
+  {{else if btn-success-text }}
+    <button type="button" class="btn btn-outline-success">{{ btn-success-text }}</button>
+  {{else if btn-info-text }}
+    <button type="button" class="btn btn-outline-info">{{ btn-info-text }}</button>
+  {{else if btn-warning-text }}
+    <button type="button" class="btn btn-outline-warning">{{ btn-warning-text }}</button>
+  {{else if btn-danger-text }}
+    <button type="button" class="btn btn-outline-danger">{{ btn-danger-text }}</button>
+  {{else}}
+    <p>invalid selector</p>
+  {{/if}}

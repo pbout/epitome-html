@@ -11,8 +11,10 @@ $link-active: $white;
 */
 $expanded-size: 250px;
 $contracted-size: 90px;
+$sidebar-header-height: $navbar-brand-height + $navbar-brand-padding-y + $navbar-padding-y + $line-height-lg + $border-radius; 
 $link-padding-side: 60px; 
 $link-inbetween-padding: 20px;
+
 
 
 .wrapper {
@@ -26,6 +28,10 @@ $link-inbetween-padding: 20px;
   background: $background;
   color: $gray-500;
   transition: all 0.3s;
+
+  .small{
+    display:none;
+  }
   
   &.active {
     min-width: $contracted-size;
@@ -33,6 +39,13 @@ $link-inbetween-padding: 20px;
     text-align: center;
 
     .sidebar-header {
+      .large{
+        display:none;
+      }
+      .small{
+        display:block;
+      }
+
       h3, #sidebar.active .CTAs {
         display: none;
       }
@@ -87,6 +100,7 @@ $link-inbetween-padding: 20px;
   
   .sidebar-header {
       padding: 20px;
+      height: $sidebar-header-height;
       background: $primary;
       //strong {
       //  display: none;
@@ -128,6 +142,7 @@ $link-inbetween-padding: 20px;
 /*
     Mediaqueries
 */
+
 @media (max-width: 768px) {
   #sidebar {
       min-width: 80px;
@@ -142,6 +157,10 @@ $link-inbetween-padding: 20px;
       .sidebar-header {
         h3, #sidebar .CTAs {
           display: none;
+        }
+
+        .small {
+          display:none;
         }
         
         //strong {
