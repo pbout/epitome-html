@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {{> _head }}
+    </head>
+    <body>
+        <div class="wrapper">
+            {{> _sidebar src="img/logo.svg" srcxp="img/logo-expanded.svg" }}
+            <div id="content">
+                <div class="navbar-header">
+                    {{> _navbar-5 src="img/hbg.svg" }}
+                </div>
+                <div>
+                    {{> _slider }}
+                    <section class="bg-tertiary text-center">
+                        <div class="container pt-5 pb-4">
+                            <ul class="list-inline">
+                            <li class="list-inline-item"><a class="mdi mdi-heart mdi-36px text-danger m-5" href="/"></a></li>
+                            <li class="list-inline-item"><a class="mdi mdi-facebook-box mdi-36px text-info m-5" href="/"></a></li>
+                            <li class="list-inline-item"><a class="mdi mdi-twitter-box mdi-36px text-info m-5" href="/"></a></li>
+                            <li class="list-inline-item"><a class="mdi mdi-instagram mdi-36px text-warning m-5" href="/"></a></li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+                <div class="container">
+                    {{> _post-content }}
+                </div>
+            </div>
+        </div>
+
+        <script src="js/app.min.js"></script> 
+        <!-- jQuery Custom Scroller CDN -->
+         <script type="text/javascript">
+             $(document).ready(function () {
+                 $('#sidebarCollapse').on('click', function () {
+                     $('#sidebar').toggleClass('active');
+                 });
+             });
+         </script>
+    </body>
+</html>
