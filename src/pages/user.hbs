@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {{> _head }}
+    </head>
+    <body>
+        <div class="wrapper">
+            {{> _sidebar src="img/logo.svg" srcxp="img/logo-expanded.svg" }}
+            <div id="content">
+                <div class="navbar-header">
+                    {{> _navbar-5 src="img/hbg.svg" }}
+                </div>
+                <section class="bg-quaternary">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-4">
+                                <img src="img/p2.jpg" alt="Los Angeles" style="width: 100%;">
+                            </div>
+                            <div class="col-8">
+                                <h1>User</h1>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div class="container">
+                    <nav class="nav nav-tabs" id="myTab" role="tablist">
+                    <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Friends</a>
+                    <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</a>
+                    <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</a>
+                    </nav>
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                            {{> _people-content }}
+                        </div>
+                        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                            <p>Quisque vitae justo viverra, egestas augue vel, porta leo. Phasellus at consequat urna, eget ultricies sem. Nullam quis dapibus eros, in dictum ipsum. Maecenas fermentum massa nec mauris tincidunt, eu aliquet mi faucibus. Aliquam nec urna eget urna iaculis ultrices quis in justo. Donec ipsum dolor, pellentesque at odio sed, sodales sodales eros. Sed tristique ullamcorper facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae est nisi. In nec pellentesque libero. Sed blandit magna sed orci ornare lobortis eget id mauris. Pellentesque sit amet tortor placerat, imperdiet magna id, placerat tortor. Curabitur eget fringilla nisl. </p>
+                        </div>
+                        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                            <p> Curabitur eget pretium ex. Aenean pharetra porttitor erat at blandit. Nullam egestas auctor feugiat. Cras accumsan sem volutpat ipsum interdum faucibus. Donec lorem orci, pellentesque et maximus et, auctor ultricies ex. Praesent in neque ut tortor posuere vestibulum nec eget nisl. Aenean mauris urna, efficitur sit amet iaculis et, venenatis quis lorem. Pellentesque auctor mauris a turpis pellentesque eleifend. Maecenas sit amet nisl posuere, dignissim ipsum ac, facilisis tortor. Phasellus in lectus mollis, facilisis arcu sed, vulputate quam. Vivamus aliquet lorem justo, eget pulvinar purus blandit sed. Curabitur elementum nisl nec leo bibendum egestas. Nunc dignissim lobortis ullamcorper. Donec lobortis interdum volutpat.In leo nisi, interdum eget interdum quis, suscipit in quam. Integer sit amet arcu ut augue pellentesque viverra nec eget ante. Pellentesque eget lacus quis dolor consectetur dictum sit amet vitae ante. Cras euismod aliquet libero eget aliquet. Donec porttitor aliquet mi eu efficitur. Quisque interdum ipsum sem, imperdiet consectetur mauris congue et. Aenean malesuada sed lacus id finibus. Nulla viverra turpis dolor. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="js/app.min.js"></script> 
+        <!-- jQuery Custom Scroller CDN -->
+         <script type="text/javascript">
+             $(document).ready(function () {
+                 $('#sidebarCollapse').on('click', function () {
+                     $('#sidebar').toggleClass('active');
+                 });
+             });
+         </script>
+    </body>
+</html>
