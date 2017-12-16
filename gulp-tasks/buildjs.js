@@ -14,6 +14,7 @@ var scripts = [
     'node_modules/popper.js/dist/umd/popper.js',
     'node_modules/bootstrap/dist/js/bootstrap.js',
     'src/js/prism.js',
+    'src/js/loader.js',
     'src/js/sidebar.js'
 ];                                              // Scripts to include in app.js (individually defined)
 var dest = 'dist/js/'; 

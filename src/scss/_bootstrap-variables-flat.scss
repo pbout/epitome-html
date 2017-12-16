@@ -231,9 +231,9 @@ $font-size-base:              0.9375rem !default; // Assumes the browser default
 $font-size-lg:                ($font-size-base * 1.25) !default;
 $font-size-sm:                ($font-size-base * .875) !default;
 
-$font-weight-light:           300 !default;
-$font-weight-normal:          400 !default;
-$font-weight-bold:            700 !default;
+$font-weight-light:           100 !default;
+$font-weight-normal:          300 !default;
+$font-weight-bold:            500 !default;
 
 $font-weight-base:            $font-weight-normal !default;
 $line-height-base:            1.5 !default;

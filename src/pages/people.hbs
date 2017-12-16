@@ -11,11 +11,36 @@
                     {{> _navbar-5 src="img/hbg.svg" }}
                 </div>
                 <div class="container-fluid p-4">
-                    {{> _people-content }}
+                    <div class="row">
+                        <div class="col-lg-3">
+                            {{> _card-1 user="img/bg1.png" bg="img/p1.jpg" }}
+                        </div>
+                        <div class="col-lg-3">
+                            {{> _card-1 user="img/bg2.png" bg="img/p2.jpg" }}
+                        </div>
+                        <div class="col-lg-3">
+                            {{> _card-1 user="img/bg3.png" bg="img/p3.jpg" }}
+                        </div>
+                        <div class="col-lg-3">
+                            {{> _card-1 user="img/bg4.png" bg="img/p4.jpg" }}
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3">
+                            {{> _card-1 user="img/bg5.png" bg="img/p5.jpg" }}
+                        </div>
+                        <div class="col-lg-3">
+                            {{> _card-1 user="img/bg6.jpg" bg="img/p6.jpg" }}
+                        </div>
+                        <div class="col-lg-3">
+                            {{> _card-1 user="img/bg7.png" bg="img/p7.jpg" }}
+                        </div>
+                        <div class="col-lg-3">
+                            {{> _card-1 user="img/bg8.png" bg="img/p8.jpg" }}
+                        </div>
+                    </div>
                 </div>
-                <div class="m-5">
-                    {{> _slider }}
-                </div>
+
             </div>
         </div>
 
@@ -27,6 +52,22 @@
                      $('#sidebar').toggleClass('active');
                  });
              });
+         </script>
+         <script type="text/javascript">
+               $().ready(function(){
+                    $('[rel="tooltip"]').tooltip();
+
+                });
+
+                function rotateCard(btn){
+                    var $card = $(btn).closest('.card-container');
+                    console.log($card);
+                    if($card.hasClass('hover')){
+                        $card.removeClass('hover');
+                    } else {
+                        $card.addClass('hover');
+                    }
+                }
          </script>
     </body>
 </html>

@@ -14,6 +14,15 @@
     </div>
 
     The sidebar is activated by any button containing the id="sidebarCollapse"
+    The script below must be included wherever the sidebar is added:
+
+        <script type="text/javascript">
+             $(document).ready(function () {
+                $('#sidebarCollapse').on('click', function () {
+                     $('#sidebar').toggleClass('active');
+                });
+            });
+        </script>
 
     Source: https://bootstrapious.com/p/bootstrap-sidebar 
 --}}
@@ -23,17 +32,6 @@
         <img class="small mx-auto" src={{ src }} width="30" height="30" alt="E">
         <img class="large mx-auto" src={{ srcxp }} width="200" height="30" alt="Epitome">
     </div>
-    
-    {{!--
-    <nav class="navbar navbar-dark bg-primary">
-        <div class="mx-auto">
-            <a class="navbar-brand" href="#">
-            <img src={{ src }} width="30" height="30" alt="">
-            </a>
-            <img class="navbar-brand" src="" alt="pitome">
-        </div>
-    </nav>
-    --}}
 
     <ul class="list-unstyled components">
         <li class="active">

@@ -17987,6 +17987,9 @@ Prism.hooks.add('complete', function completeHook(env) {
 })();
 
 
+$(document).ready(function() {
+    $(".loader").fadeOut("slow");;
+});
 $("#menu-toggle").click(function(e) {
     e.preventDefault();
     $("#wrapper").toggleClass("toggled");
