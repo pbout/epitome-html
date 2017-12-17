@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {{> _head }}
+        <style>
+            #map { height: 400px; width: 100%; }
+        </style>
+    </head>
+    <body>
+        {{> _loader }}
+        <div class="wrapper">
+            {{> _sidebar src="img/logo.svg" srcxp="img/logo-expanded.svg" }}
+            <div id="content">
+                <div class="navbar-header">
+                    {{> _navbar-5 src="img/hbg.svg" }}
+                </div>
+                <div>
+                    <div id="map"></div>                    
+                    <section class="bg-tertiary text-center">
+                        <div class="container pt-5 pb-4">
+                            <ul class="list-inline">
+                            <li class="list-inline-item"><a class="mdi mdi-heart mdi-36px text-danger m-5" href="/"></a></li>
+                            <li class="list-inline-item"><a class="mdi mdi-facebook-box mdi-36px text-info m-5" href="/"></a></li>
+                            <li class="list-inline-item"><a class="mdi mdi-twitter-box mdi-36px text-info m-5" href="/"></a></li>
+                            <li class="list-inline-item"><a class="mdi mdi-instagram mdi-36px text-warning m-5" href="/"></a></li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+                <div class="container">
+                    {{> _post-content }}
+                </div>
+            </div>
+        </div>
+
+        <script src="js/app.min.js"></script> 
+        <!-- jQuery Custom Scroller CDN -->
+         <script type="text/javascript">
+             $(document).ready(function () {
+                 $('#sidebarCollapse').on('click', function () {
+                     $('#sidebar').toggleClass('active');
+                 });
+             });
+         </script>
+         <script>
+             function initMap() { 
+                var uluru = {lat: 51.556337, lng: -0.011374}; 
+                var map = new google.maps.Map(document.getElementById('map'), { 
+                    zoom: 15, 
+                    center: uluru,
+                    styles:
+                    [
+                        {
+                            "elementType": "geometry",
+                            "stylers": [
+                            {
+                                "color": "#242f3e"
+                            }
+                            ]
+                        },
+                        {
+                            "elementType": "labels.text.fill",
+                            "stylers": [
+                            {
+                                "color": "#746855"
+                            }
+                            ]
+                        },
+                        {
+                            "elementType": "labels.text.stroke",
+                            "stylers": [
+                            {
+                                "color": "#242f3e"
+                            }
+                            ]
+                        },
+                        {
+                            "featureType": "administrative",
+                            "elementType": "geometry",
+                            "stylers": [
+                            {
+                                "visibility": "off"
+                            }
+                            ]
+                        },
+                        {
+                            "featureType": "administrative.locality",
+                            "elementType": "labels.text.fill",
+                            "stylers": [
+                            {
+                                "color": "#d59563"
+                            }
+                            ]
+                        },
+                        {
+                            "featureType": "landscape",
+                            "elementType": "geometry.fill",
+                            "stylers": [
+                            {
+                                "color": "#232b2e"
+                            }
+                            ]
+                        },
+                        {
+                            "featureType": "poi",
+                            "stylers": [
+                            {
+                                "visibility": "off"
+                            }
+                            ]
+                        },
+                        {
+                            "featureType": "poi",
+                            "elementType": "labels.text.fill",
+                            "stylers": [
+                            {
+                                "color": "#d59563"
+                            }
+                            ]
+                        },
+                        {
+                            "featureType": "poi.park",
+                            "elementType": "geometry",
+                            "stylers": [
+                            {
+                                "color": "#263c3f"
+                            }
+                            ]
+                        },
+                        {
+                            "featureType": "poi.park",
+                            "elementType": "labels.text.fill",
+                            "stylers": [
+                            {
+                                "color": "#6b9a76"
+                            }
+                            ]
+                        },
+                        {
+                            "featureType": "road",
+                            "elementType": "geometry",
+                            "stylers": [
+                            {
+                                "color": "#38414e"
+                            }
+                            ]
+                        },
+                        {
+                            "featureType": "road",
+                            "elementType": "geometry.stroke",
+                            "stylers": [
+                            {
+                                "color": "#212a37"
+                            }
+                            ]
+                        },
+                        {
+                            "featureType": "road",
+                            "elementType": "labels.icon",
+                            "stylers": [
+                            {
+                                "visibility": "off"
+                            }
+                            ]
+                        },
+                        {
+                            "featureType": "road",
+                            "elementType": "labels.text.fill",
+                            "stylers": [
+                            {
+                                "color": "#9ca5b3"
+                            }
+                            ]
+                        },
+                        {
+                            "featureType": "road.highway",
+                            "elementType": "geometry",
+                            "stylers": [
+                            {
+                                "color": "#746855"
+                            }
+                            ]
+                        },
+                        {
+                            "featureType": "road.highway",
+                            "elementType": "geometry.stroke",
+                            "stylers": [
+                            {
+                                "color": "#1f2835"
+                            }
+                            ]
+                        },
+                        {
+                            "featureType": "road.highway",
+                            "elementType": "labels.text.fill",
+                            "stylers": [
+                            {
+                                "color": "#f3d19c"
+                            }
+                            ]
+                        },
+                        {
+                            "featureType": "transit",
+                            "stylers": [
+                            {
+                                "visibility": "off"
+                            }
+                            ]
+                        },
+                        {
+                            "featureType": "transit",
+                            "elementType": "geometry",
+                            "stylers": [
+                            {
+                                "color": "#2f3948"
+                            }
+                            ]
+                        },
+                        {
+                            "featureType": "transit.station",
+                            "elementType": "labels.text.fill",
+                            "stylers": [
+                            {
+                                "color": "#d59563"
+                            }
+                            ]
+                        },
+                        {
+                            "featureType": "water",
+                            "elementType": "geometry",
+                            "stylers": [
+                            {
+                                "color": "#17263c"
+                            }
+                            ]
+                        },
+                        {
+                            "featureType": "water",
+                            "elementType": "geometry.fill",
+                            "stylers": [
+                            {
+                                "color": "#2c3e50"
+                            }
+                            ]
+                        },
+                        {
+                            "featureType": "water",
+                            "elementType": "labels.text.fill",
+                            "stylers": [
+                            {
+                                "color": "#515c6d"
+                            }
+                            ]
+                        },
+                        {
+                            "featureType": "water",
+                            "elementType": "labels.text.stroke",
+                            "stylers": [
+                            {
+                                "color": "#17263c"
+                            }
+                            ]
+                        }
+                        ] 
+                }); 
+                var marker = new google.maps.Marker({ position: uluru, map: map }); 
+            }
+         </script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBB7RqboXxUChmEBwExKCSKxv0kkEFGoSQ&callback=initMap"> </script>
+</body>
+</html>
