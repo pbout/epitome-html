@@ -1,11 +1,204 @@
 @font-face {
-    font-family: "alegreyasans";
-    src: url(fonts/AlegreyaSans-Black.ttf) format('truetype');
-    font-weight: black;
-    font-style: black;
+    font-family: "asb";
+    src: url('fonts/AlegreyaSans-Black.ttf') format('truetype');
 }
+
 @font-face {
-    font-family: "roboto";
-    src: url(fonts/Roboto-Thin.ttf) format('truetype');
-    font-weight: thin;
+    font-family: "asbi";
+    src: url('fonts/AlegreyaSans-BlackItalic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "asbo";
+    src: url('fonts/AlegreyaSans-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "asboi";
+    src: url('fonts/AlegreyaSans-BoldItalic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "asebo";
+    src: url('fonts/AlegreyaSans-ExtraBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "aseboi";
+    src: url('fonts/AlegreyaSans-ExtraBoldItalic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "asi";
+    src: url('fonts/AlegreyaSans-Italic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "asl";
+    src: url('fonts/AlegreyaSans-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "asli";
+    src: url('fonts/AlegreyaSans-LightItalic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "asm";
+    src: url('fonts/AlegreyaSans-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "asmi";
+    src: url('fonts/AlegreyaSans-MediumItalic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "asr";
+    src: url('fonts/AlegreyaSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "ast";
+    src: url('fonts/AlegreyaSans-Thin.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "asti";
+    src: url('fonts/AlegreyaSans-ThinItalic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "rb";
+    src: url('fonts/Roboto-Black.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "rbi";
+    src: url('fonts/Roboto-BlackItalic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "rbo";
+    src: url('fonts/Roboto-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "rboi";
+    src: url('fonts/Roboto-BoldItalic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "ri";
+    src: url('fonts/Roboto-Italic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "rol";
+    src: url('fonts/Roboto-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "rli";
+    src: url('fonts/Roboto-LightItalic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "rm";
+    src: url('fonts/Roboto-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "rmi";
+    src: url('fonts/Roboto-MediumItalic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "rr";
+    src: url('fonts/Roboto-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "rt";
+    src: url('fonts/Roboto-Thin.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "rti";
+    src: url('fonts/Roboto-ThinItalic.ttf') format('truetype');
+}
+
+$alegreya-sans-black:               asb;
+$alegreya-sans-black-italic:        asbi;
+$alegreya-sans-bold:                asbo;
+$alegreya-sans-bold-italic:         asboi;
+$alegreya-sans-extra-bold:          asebo;
+$alegreya-sans-extra-bold-italic:   aseboi;
+$alegreya-sans-italic:              asi;
+$alegreya-sans-light:               asl;
+$alegreya-sans-light-italic:        asli;
+$alegreya-sans-medium:              asm;
+$alegreya-sans-medium-italic:       asi;
+$alegreya-sans-regular:             asr;
+$alegreya-sans-thin:                ast;
+$alegreya-sans-thin-italic:         asti;
+
+$roboto-black: rb;
+$roboto-black-italic: rbi;
+$roboto-bold: rbo;
+$roboto-bold-italic: rboi;
+$roboto-italic: ri;
+$roboto-light: rol;
+$roboto-light-italic: rli;
+$roboto-medium: rm;
+$roboto-medium-italic: rmi;
+$roboto-regular: rr;
+$roboto-thin: rt;
+$roboto-thin-italic: rti;
+
+
+
+
+$roboto-thin: rt;
+
+
+body p {
+    font-family: asl;
+    font-size: 1.2rem;
+}
+
+body h1 {
+    font-family: ast;
+    font-size: 4rem;
+    font-weight: 300;
+}
+
+body h2 {
+    font-family: ast;
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+body h3 {
+    font-family: ast;
+    font-size: 2.5rem;
+    font-weight: 100;
+}
+
+body h4 {
+    font-family: ast;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+body h5 {
+    font-family: ast;
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+body h6 {
+    font-family: ast;
+    font-size: 1rem;
+    font-weight: 300;
 }

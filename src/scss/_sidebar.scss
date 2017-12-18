@@ -7,6 +7,15 @@ $link-hover: $success;
 $link-active: $white;
 
 /*
+  Sidebar Font options
+*/
+$link-font: $roboto-thin;
+$link-font-size: 1.3em;
+$link-font-weight: normal;
+$sublink-font: $roboto-thin;
+$sublink-font-size: 1em;
+
+/*
   Sidebar size options
 */
 $expanded-size: 250px;
@@ -81,12 +90,13 @@ $link-inbetween-padding: 20px;
   
   ul li {
       a {
+        font-family: $link-font;
         color: $link-inactive;
         text-decoration: none;
         text-align: left;
         padding: $link-inbetween-padding $link-padding-side;
-        font-size: 1.2em;
-        font-weight: bold;
+        font-size: $link-font-size;
+        font-weight: $link-font-weight;
         display: block;
         i {
             margin-right: 10px;
@@ -116,7 +126,8 @@ $link-inbetween-padding: 20px;
     }
   
   ul ul a {
-    font-size: 0.9em !important;
+    font-family: $sublink-font;
+    font-size: $sublink-font-size !important;
     padding-left: 100px !important;
     background: $gray-800;
   }
