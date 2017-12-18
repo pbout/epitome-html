@@ -121,7 +121,7 @@ body {
   margin: 0;
   font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 0.9375rem;
-  font-weight: 300;
+  font-weight: 100;
   line-height: 1.5;
   color: #212529;
   text-align: left;
@@ -13403,6 +13403,18 @@ pre.prettyprint {
   .card-container.manual-flip.hover .back {
     z-index: 5;
     visibility: visible; } }
+
+/* 
+    CSS for facebook user image on profile page.
+*/
+.avatar {
+  border-radius: 110px;
+  display: block;
+  left: 27%;
+  margin: 0 auto;
+  position: absolute;
+  text-align: left;
+  top: 360px; }
 
 /* 
     Javascript must be enabled for this to work.
