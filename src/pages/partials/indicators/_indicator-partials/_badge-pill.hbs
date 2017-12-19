@@ -1,0 +1,37 @@
+{{!--
+    A set of badge pills for demonstration purposes. 
+    This block is for demonstration purposes. Use the elements below in other partials 
+    but avoid using as is.
+
+    Usage: Call each button individualy using 
+      {{> _badge-pill badge-primary="Badge contents" }}
+
+--}}
+
+{{#if badge-primary }}
+    <span class="badge badge-pill badge-primary">{{ badge-primary }}</span>
+{{else if badge-secondary }}
+    <span class="badge badge-pill badge-secondary">{{ badge-secondary }}</span>
+{{else if badge-success }}
+    <span class="badge badge-pill badge-success">{{ badge-success }}</span>
+{{else if badge-info }}
+    <span class="badge badge-pill badge-info">{{ badge-info }}</span>
+{{else if badge-warning }}
+    <span class="badge badge-pill badge-warning">{{ badge-warning }}</span>
+{{else if badge-danger }}
+    <span class="badge badge-pill badge-danger">{{ badge-danger }}</span>
+{{else if badge-light }}
+    <span class="badge badge-pill badge-light">{{ badge-light }}</span>
+{{else if badge-dark }}
+    <span class="badge badge-pill badge-dark">{{ badge-dark }}</span>
+{{else}}
+    <p>invalid selector</p>
+{{/if}}
+    
+
+
+
+
+
+    
+

@@ -3,35 +3,16 @@
     This card rotates after being hovered over to display more information
     on the back. Ideal for user profile information.
 
-    Must include the following script on the bottom of every page
-    where this card is used:
-    <script type="text/javascript">
-               $().ready(function(){
-                    $('[rel="tooltip"]').tooltip();
-
-                });
-
-                function rotateCard(btn){
-                    var $card = $(btn).closest('.card-container');
-                    console.log($card);
-                    if($card.hasClass('hover')){
-                        $card.removeClass('hover');
-                    } else {
-                        $card.addClass('hover');
-                    }
-                }
-         </script>
-
     Credits: https://bootsnipp.com/snippets/AXnRg
 --}}
 <div class="card-container">
 <div class="card">
     <div class="front">
         <div class="cover">
-            <img src="{{ user }}"/>
+            <img src="{{ bg }}"/>
         </div>
         <div class="user">
-            <img class="img-circle" src="{{ bg }}"/>
+            <img class="img-circle" src="{{ user }}"/>
         </div>
         <div class="content">
             <div class="main">
