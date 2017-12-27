@@ -13,7 +13,7 @@ var partials = [
 var dest = 'dist/css/';                    // Destination folder for transpiled css.
 var fontssrc = 'src/fonts/';               // Location of custom source fonts.
 var fontsmdi = 'node_modules/mdi/fonts/';  // Location of Material design fonts
-var fontsdst = 'dist/css/fonts/';          // Destination for fonts.
+var fontsdst = 'dist/fonts/';          // Destination for fonts.
 
 //--------------End configuration------------->
 

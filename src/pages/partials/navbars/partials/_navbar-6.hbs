@@ -1,0 +1,20 @@
+{{!
+    Navbar with centered logo and link on the right.
+
+    Variables:
+    - src: source for logo file
+
+}}
+<nav class="navbar navbar-expand navbar-dark bg-primary justify-content-between">
+    <div class="container">
+        <div class="w-25"></div>
+        <div class="w-50 text-center">
+            <img class ="text-white" src={{ src }} width="30" height="30" alt="">
+        </div>
+        <div class="w-25">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link ml-auto" href="#">Login</a>
+            </div>
+        </div>
+    </div>
+</nav>
