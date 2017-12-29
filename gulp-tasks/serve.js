@@ -1,18 +1,14 @@
-var gulp = require('gulp');
-var server = require('gulp-server-livereload');
-
-/*
-  TODO -> Error: "Cannot GET *.html"
-  Serves the contents within the dist directry and reloads
-  on every change.
-*/
+var gulp = require('gulp'),
+connect = require('gulp-connect');
+ 
 gulp.task('serve', function() {
-    gulp.src('./dist/')
-      .pipe(server({
-        livereload:       true,
-        directoryListing: true,
-        open:             true,
-        log:              'debug',
-        clientConsole:    true
-      }));
+  connect.server({
+    root: ['./dist/'],
+    open:{ browser: 'Firefox'},
+    livereload: true
   });
+});
+
+gulp.task('reload', function(){
+  connect.reload();
+})

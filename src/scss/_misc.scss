@@ -3,11 +3,11 @@
 */
 
 .avatar {
-    border-radius: 110px;
-    display: block;
-    left: 27%;
-    margin: 0 auto;
-    position: absolute;
-    text-align: left;
-    top: 360px;
+    position: relative;
+    top: -100px;
+    z-index: 99;
+}
+
+.profile-bar img{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 0px 50px 0 rgba(0, 0, 0, 0.50);
 }

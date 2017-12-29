@@ -57,7 +57,7 @@ function flatten(lists) {
 /*
   Transpiles all *.hbs files into html.
 */
-gulp.task('build:html', function(){
+gulp.task('html', function(){
     options = { 
         ignorePartials: true,
         batch : partialsource

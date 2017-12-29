@@ -15,53 +15,32 @@
                     {{> _navbar-5 src="img/hbg.svg" }}
                 </div>
                 <div>
-                    <div id="map" class="bg-tertiary"></div>                    
-                    <section class="bg-tertiary text-center">
-                        <img src="img/p9.jpg" width="180" height="180" alt="" class="rounded-circle avatar"/>
-                        
-                        <div class="container pt-5 pb-5">
-                            {{!--
-                            <ul class="list-inline">
-                            <li class="list-inline-item"><a class="mdi mdi-heart mdi-36px text-danger m-5" href="/"></a></li>
-                            <li class="list-inline-item"><a class="mdi mdi-facebook-box mdi-36px text-info m-5" href="/"></a></li>
-                            <li class="list-inline-item"><a class="mdi mdi-twitter-box mdi-36px text-info m-5" href="/"></a></li>
-                            <li class="list-inline-item"><a class="mdi mdi-instagram mdi-36px text-warning m-5" href="/"></a></li>
-                            </ul>
-                            --}}
-                            <a class="mdi mdi-heart mdi-36px text-danger float-right" href="/"></a>
-                        </div>
-                    </section>
+                    <div id="map" class="bg-tertiary"></div>    
+                    {{> _profile-1 src="img/p9.jpg" usr="Username 1"}}
                 </div>
                 <div class="container">
-                    {{> _profile-content }}
 
                 <div class="container-fluid p-4">
                     <div class="row">
-                        <div class="col-lg-3">
-                            {{> _card-2 user="img/p1.jpg" bg="img/bg1.png" }}
+                        <div class="col-xl-4">
+                            {{> _card-3 bg="img/bg1.png" }}
                         </div>
-                        <div class="col-lg-3">
-                            {{> _card-2 user="img/p2.jpg" bg="img/bg2.png" }}
+                        <div class="col-xl-4">
+                            {{> _card-3 bg="img/bg2.png" }}
                         </div>
-                        <div class="col-lg-3">
-                            {{> _card-2 user="img/p3.jpg" bg="img/bg3.png" }}
-                        </div>
-                        <div class="col-lg-3">
-                            {{> _card-2 user="img/p4.jpg" bg="img/bg4.png" }}
+                        <div class="col-xl-4">
+                            {{> _card-3 bg="img/bg3.png" }}
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-lg-3">
-                            {{> _card-1 user="img/p5.jpg" bg="img/bg5.png" }}
+                        <div class="col-xl-4">
+                            {{> _card-3 bg="img/bg5.png" }}
                         </div>
-                        <div class="col-lg-3">
-                            {{> _card-1 user="img/p6.jpg" bg="img/bg6.jpg" }}
+                        <div class="col-xl-4">
+                            {{> _card-3 bg="img/bg6.jpg" }}
                         </div>
-                        <div class="col-lg-3">
-                            {{> _card-1 user="img/p7.jpg" bg="img/bg7.png" }}
-                        </div>
-                        <div class="col-lg-3">
-                            {{> _card-1 user="img/p8.jpg" bg="img/bg8.png" }}
+                        <div class="col-xl-4">
+                            {{> _card-3 bg="img/bg7.png" }}
                         </div>
                     </div>
                 </div>

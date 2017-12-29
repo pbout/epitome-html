@@ -3,107 +3,107 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700,400italic");
 @font-face {
   font-family: "asb";
-  src: url("fonts/AlegreyaSans-Black.ttf") format("truetype"); }
+  src: url("../fonts/AlegreyaSans-Black.ttf") format("truetype"); }
 
 @font-face {
   font-family: "asbi";
-  src: url("fonts/AlegreyaSans-BlackItalic.ttf") format("truetype"); }
+  src: url("../fonts/AlegreyaSans-BlackItalic.ttf") format("truetype"); }
 
 @font-face {
   font-family: "asbo";
-  src: url("fonts/AlegreyaSans-Bold.ttf") format("truetype"); }
+  src: url("../fonts/AlegreyaSans-Bold.ttf") format("truetype"); }
 
 @font-face {
   font-family: "asboi";
-  src: url("fonts/AlegreyaSans-BoldItalic.ttf") format("truetype"); }
+  src: url("../fonts/AlegreyaSans-BoldItalic.ttf") format("truetype"); }
 
 @font-face {
   font-family: "asebo";
-  src: url("fonts/AlegreyaSans-ExtraBold.ttf") format("truetype"); }
+  src: url("../fonts/AlegreyaSans-ExtraBold.ttf") format("truetype"); }
 
 @font-face {
   font-family: "aseboi";
-  src: url("fonts/AlegreyaSans-ExtraBoldItalic.ttf") format("truetype"); }
+  src: url("../fonts/AlegreyaSans-ExtraBoldItalic.ttf") format("truetype"); }
 
 @font-face {
   font-family: "asi";
-  src: url("fonts/AlegreyaSans-Italic.ttf") format("truetype"); }
+  src: url("../fonts/AlegreyaSans-Italic.ttf") format("truetype"); }
 
 @font-face {
   font-family: "asl";
-  src: url("fonts/AlegreyaSans-Light.ttf") format("truetype"); }
+  src: url("../fonts/AlegreyaSans-Light.ttf") format("truetype"); }
 
 @font-face {
   font-family: "asli";
-  src: url("fonts/AlegreyaSans-LightItalic.ttf") format("truetype"); }
+  src: url("../fonts/AlegreyaSans-LightItalic.ttf") format("truetype"); }
 
 @font-face {
   font-family: "asm";
-  src: url("fonts/AlegreyaSans-Medium.ttf") format("truetype"); }
+  src: url("../fonts/AlegreyaSans-Medium.ttf") format("truetype"); }
 
 @font-face {
   font-family: "asmi";
-  src: url("fonts/AlegreyaSans-MediumItalic.ttf") format("truetype"); }
+  src: url("../fonts/AlegreyaSans-MediumItalic.ttf") format("truetype"); }
 
 @font-face {
   font-family: "asr";
-  src: url("fonts/AlegreyaSans-Regular.ttf") format("truetype"); }
+  src: url("../fonts/AlegreyaSans-Regular.ttf") format("truetype"); }
 
 @font-face {
   font-family: "ast";
-  src: url("fonts/AlegreyaSans-Thin.ttf") format("truetype"); }
+  src: url("../fonts/AlegreyaSans-Thin.ttf") format("truetype"); }
 
 @font-face {
   font-family: "asti";
-  src: url("fonts/AlegreyaSans-ThinItalic.ttf") format("truetype"); }
+  src: url("../fonts/AlegreyaSans-ThinItalic.ttf") format("truetype"); }
 
 @font-face {
   font-family: "rb";
-  src: url("fonts/Roboto-Black.ttf") format("truetype"); }
+  src: url("../fonts/Roboto-Black.ttf") format("truetype"); }
 
 @font-face {
   font-family: "rbi";
-  src: url("fonts/Roboto-BlackItalic.ttf") format("truetype"); }
+  src: url("../fonts/Roboto-BlackItalic.ttf") format("truetype"); }
 
 @font-face {
   font-family: "rbo";
-  src: url("fonts/Roboto-Bold.ttf") format("truetype"); }
+  src: url("../fonts/Roboto-Bold.ttf") format("truetype"); }
 
 @font-face {
   font-family: "rboi";
-  src: url("fonts/Roboto-BoldItalic.ttf") format("truetype"); }
+  src: url("../fonts/Roboto-BoldItalic.ttf") format("truetype"); }
 
 @font-face {
   font-family: "ri";
-  src: url("fonts/Roboto-Italic.ttf") format("truetype"); }
+  src: url("../fonts/Roboto-Italic.ttf") format("truetype"); }
 
 @font-face {
   font-family: "rol";
-  src: url("fonts/Roboto-Light.ttf") format("truetype"); }
+  src: url("../fonts/Roboto-Light.ttf") format("truetype"); }
 
 @font-face {
   font-family: "rli";
-  src: url("fonts/Roboto-LightItalic.ttf") format("truetype"); }
+  src: url("../fonts/Roboto-LightItalic.ttf") format("truetype"); }
 
 @font-face {
   font-family: "rm";
-  src: url("fonts/Roboto-Medium.ttf") format("truetype"); }
+  src: url("../fonts/Roboto-Medium.ttf") format("truetype"); }
 
 @font-face {
   font-family: "rmi";
-  src: url("fonts/Roboto-MediumItalic.ttf") format("truetype"); }
+  src: url("../fonts/Roboto-MediumItalic.ttf") format("truetype"); }
 
 @font-face {
   font-family: "rr";
-  src: url("fonts/Roboto-Regular.ttf") format("truetype"); }
+  src: url("../fonts/Roboto-Regular.ttf") format("truetype"); }
 
 @font-face {
   font-family: "rt";
-  src: url("fonts/Roboto-Thin.ttf") format("truetype"); }
+  src: url("../fonts/Roboto-Thin.ttf") format("truetype"); }
 
 @font-face {
   font-family: "rti";
-  src: url("fonts/Roboto-ThinItalic.ttf") format("truetype"); }
+  src: url("../fonts/Roboto-ThinItalic.ttf") format("truetype"); }
 
 body p {
   font-family: asl;
@@ -3215,7 +3215,6 @@ tbody.collapse.show {
   height: 215px; }
 
 .card .name {
-  font-family: 'Arima Madurai', cursive;
   font-size: 22px;
   line-height: 28px;
   margin: 10px 0 0;
@@ -3253,7 +3252,6 @@ tbody.collapse.show {
   height: 90px; }
 
 .card .motto {
-  font-family: 'Arima Madurai', cursive;
   border-bottom: 1px solid #EEEEEE;
   color: #999999;
   font-size: 14px;
@@ -3278,7 +3276,6 @@ tbody.collapse.show {
   border-left: 1px solid #EEEEEE; }
 
 .card .stats h4 {
-  font-family: 'Arima Madurai', cursive;
   font-weight: 300;
   margin-bottom: 5px; }
 
@@ -13027,7 +13024,6 @@ a.text-dark:focus, a.text-dark:hover {
   box-sizing: border-box;
   width: 100%;
   text-align: left;
-  font: bold 16px sans-serif;
   padding: 55px 50px; }
 
 .footer-distributed .footer-left,
@@ -13043,7 +13039,6 @@ a.text-dark:focus, a.text-dark:hover {
 /* The company logo */
 .footer-distributed h3 {
   color: #ffffff;
-  font: normal 36px 'Cookie', cursive;
   margin: 0; }
 
 .footer-distributed h3 span {
@@ -13140,8 +13135,6 @@ a.text-dark:focus, a.text-dark:hover {
 
 /* If you don't want the footer to be responsive, remove these media queries */
 @media (max-width: 880px) {
-  .footer-distributed {
-    font: bold 14px sans-serif; }
   .footer-distributed .footer-left,
   .footer-distributed .footer-center,
   .footer-distributed .footer-right {
@@ -13522,7 +13515,6 @@ pre.code-toolbar > .toolbar span:focus {
   height: 215px; }
 
 .card .name {
-  font-family: 'Arima Madurai', cursive;
   font-size: 22px;
   line-height: 28px;
   margin: 10px 0 0;
@@ -13560,7 +13552,6 @@ pre.code-toolbar > .toolbar span:focus {
   height: 90px; }
 
 .card .motto {
-  font-family: 'Arima Madurai', cursive;
   border-bottom: 1px solid #EEEEEE;
   color: #999999;
   font-size: 14px;
@@ -13585,7 +13576,6 @@ pre.code-toolbar > .toolbar span:focus {
   border-left: 1px solid #EEEEEE; }
 
 .card .stats h4 {
-  font-family: 'Arima Madurai', cursive;
   font-weight: 300;
   margin-bottom: 5px; }
 
@@ -13705,13 +13695,12 @@ pre.prettyprint {
     CSS for facebook user image on profile page.
 */
 .avatar {
-  border-radius: 110px;
-  display: block;
-  left: 27%;
-  margin: 0 auto;
-  position: absolute;
-  text-align: left;
-  top: 360px; }
+  position: relative;
+  top: -100px;
+  z-index: 99; }
+
+.profile-bar img {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 0px 50px 0 rgba(0, 0, 0, 0.5); }
 
 /* 
     Javascript must be enabled for this to work.

@@ -38,7 +38,7 @@ gulp.task('mdi', function() {
     Transpiles scss files into a single css file along with 
     executing the 'fonts' and 'mdi' tasks.
 */
-gulp.task('build:css', ['mdi','fonts'], function () {
+gulp.task('css', ['mdi','fonts'], function () {
     return gulp.src('src/scss/app.scss')
         .pipe(sass({
             outputStyle: 'nested',
@@ -53,7 +53,7 @@ gulp.task('build:css', ['mdi','fonts'], function () {
     Minifies the above produced css files. (Transpilation of
     scss to css must first take place before minification)
 */
-gulp.task('minifycss', function () {
+gulp.task('minify:css', function () {
     gulp.src(dest + '*.css')
         .pipe(cssmin())
         .pipe(rename({suffix: '.min'}))

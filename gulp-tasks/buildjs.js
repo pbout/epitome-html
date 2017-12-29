@@ -24,7 +24,7 @@ var dest = 'dist/js/';
     Concatenates all js files the paths of which are
     declared in the scripts list into a single app.js file.
 */
-gulp.task('build:js:concat', function() {
+gulp.task('js:concat', function() {
     return gulp.src(scripts)
       .pipe(concat('app.js'))
       .pipe(gulp.dest(dest));
@@ -33,7 +33,7 @@ gulp.task('build:js:concat', function() {
 /*
     Compresses-uglifies a *.js file into a *.min.js file.
 */
-gulp.task('build:js:compress', function (cb) {
+gulp.task('js:compress', function (cb) {
   var options = {};
 
   pump([
@@ -46,9 +46,3 @@ gulp.task('build:js:compress', function (cb) {
   );
 });
 
-/*
-    Serially executes concatjs and compressjs tasks.
-*/
-gulp.task('build:js', function(){
-    runSequence('build:js:concat', 'build:js:compress');
-});
