@@ -5,6 +5,39 @@
     </head>
     <body>
         {{> _navbar-4 src = "img/logo.svg" }}
-        
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-6">
+                    <div class="row">
+                        <div class="col-6">
+                            {{> _card-3 bg="img/bg1.png"}}
+                        </div>
+                        <div class="col-6">
+                            {{> _card-3 bg="img/bg2.png"}}
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 text-center text-white">
+                    <h1 class="mt-5">This is a sample title!</h1>
+                    <h3 class="mt-2">This is a subtitle. An awesome one!</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris interdum, lorem et mattis elementum, ex magna volutpat leo, vitae venenatis sem felis in mauris. Quisque euismod, justo nec vehicula volutpat, sem nisl pellentesque metus, et eleifend dui ligula fermentum purus. Morbi rhoncus, ligula a malesuada placerat, justo nulla viverra velit, quis euismod quam elit id nulla. Vivamus vitae tempor diam. Maecenas in rutrum nunc. Mauris ac ipsum convallis, viverra tellus eget, auctor neque. Aenean nunc nulla, pellentesque at nunc non, pellentesque sagittis mi. Aliquam diam odio, egestas sed bibendum a, fringilla vel felis. Integer et nunc erat. Nulla ut metus ex. Aenean nec volutpat ex. </p>
+                </div>
+            </div>
+        </div>
+        {{> _footer-1 }}
+        <canvas class="background" style="background-image:url('./img/bgmain.png'); position: absolute; display: block; top: 0; left: 0; z-index: -9999; height=100%;"></canvas>
+
+        {{> _scripts }}
+        <script>
+            Particles.init({
+            // normal options
+            selector: '.background',
+            // options for breakpoints
+            maxParticles: 20,
+            sizeVariations: 10,
+            color: '#486582',
+            connectParticles: true
+            }); 
+        </script>
     </body>
 </html>

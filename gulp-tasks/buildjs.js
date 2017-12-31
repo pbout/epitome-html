@@ -13,6 +13,7 @@ var scripts = [
     'node_modules/jquery/dist/jquery.js',
     'node_modules/popper.js/dist/umd/popper.js',
     'node_modules/bootstrap/dist/js/bootstrap.js',
+    'node_modules/particlesjs/dist/particles.js',
     'src/js/prism.js',
     'src/js/loader.js',
     'src/js/sidebar.js'

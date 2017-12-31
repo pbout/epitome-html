@@ -24,6 +24,7 @@
     "gulp-server-livereload": "^1.9.2",
     "gulp-uglify": "^3.0.0",
     "mdi": "^2.0.46",
+    "particlesjs": "^2.1.0",
     "pump": "^1.0.2",
     "require-dir": "^0.3.2",
     "run-sequence": "^2.2.0",
